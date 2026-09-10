@@ -964,6 +964,414 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Driver_Motor:DRV8848"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "U"
+				(at -11.43 14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "DRV8848"
+				(at 7.366 14.224 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm"
+				(at 0 -17.78 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8848.pdf"
+				(at -29.21 34.29 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Dual H-Bridge motor driver, PWM controlled, single/dual brushed DC stepper, +2 to +18 VDD, TSSOP-16"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "Dual H-Bridge motor driver"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "TSSOP*1EP*4.4x5mm*P0.65mm*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "DRV8848_0_1"
+				(rectangle
+					(start -12.7 12.7)
+					(end 12.7 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "DRV8848_1_1"
+				(pin input line
+					(at -15.24 5.08 0)
+					(length 2.54)
+					(name "~{SLEEP}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 5.08 180)
+					(length 2.54)
+					(name "AOUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "AISEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "AOUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -7.62 180)
+					(length 2.54)
+					(name "BOUT2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -10.16 180)
+					(length 2.54)
+					(name "BISEN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "BOUT1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin open_collector line
+					(at -15.24 7.62 0)
+					(length 2.54)
+					(name "~{FAULT}"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -7.62 0)
+					(length 2.54)
+					(name "BIN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -10.16 0)
+					(length 2.54)
+					(name "BIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 10.16 0)
+					(length 2.54)
+					(name "VREF"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 15.24 270)
+					(length 2.54)
+					(name "VM"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 10.16 180)
+					(length 2.54)
+					(name "VINT"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 -2.54 0)
+					(length 2.54)
+					(name "AIN2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -15.24 0 0)
+					(length 2.54)
+					(name "AIN1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -15.24 90)
+					(length 2.54)
+					(hide yes)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "17"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "MCU_ST_STM32F4:STM32F446RETx"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2972,6 +3380,16 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "Ain are basically control inputs for directions, speed and pwm. Aout are for powering the motor. "
+		(exclude_from_sim no)
+		(at 66.294 173.228 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "144f8851-c761-4ed7-8be0-9438a6fdc483")
+	)
 	(text "Reset Button"
 		(exclude_from_sim no)
 		(at 94.996 20.574 0)
@@ -3994,30 +4412,6 @@
 		)
 		(uuid "9b75814f-ef7e-4450-ac51-8b4396bed03e")
 	)
-	(label "MOTOR2_STEP"
-		(at 171.45 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "9dfa3a97-94be-4447-9b21-31f4cda33f4c")
-	)
-	(label "MOTOR1_STEP"
-		(at 171.45 69.85 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "9e15d778-1eb2-4683-b03a-9ffbad3c5e35")
-	)
 	(label "SERVO4_PWM"
 		(at 130.81 95.25 180)
 		(effects
@@ -4042,18 +4436,6 @@
 		)
 		(uuid "a6ed0e74-173d-4237-a17a-b4f5b1352494")
 	)
-	(label "MOTOR2_DIR"
-		(at 171.45 128.27 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "a7e44bc5-ca37-4d3a-bd3c-3c32cb104680")
-	)
 	(label "ESTOP_SENSE"
 		(at 130.81 105.41 180)
 		(effects
@@ -4077,18 +4459,6 @@
 			(justify right bottom)
 		)
 		(uuid "b29a78ff-dae3-4b8b-9633-64abf918f8a2")
-	)
-	(label "MOTOR2_EN"
-		(at 171.45 105.41 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "b421ceb5-cbe4-4c57-bd19-d95df94b0625")
 	)
 	(label "LIMIT2"
 		(at 130.81 102.87 180)
@@ -4257,30 +4627,6 @@
 			(justify left bottom)
 		)
 		(uuid "f21d68a4-ab0c-4f5a-8fd9-8ede618c3e24")
-	)
-	(label "MOTOR1_DIR"
-		(at 171.45 120.65 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "f2fcad1a-042e-46fc-9036-4c256446e520")
-	)
-	(label "MOTOR1_EN"
-		(at 171.45 123.19 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-				(thickness 0.254)
-				(bold yes)
-			)
-			(justify left bottom)
-		)
-		(uuid "f73cfaf3-ec91-4624-8938-79513f618df6")
 	)
 	(label "OSC_OUT"
 		(at 130.81 62.23 180)
@@ -5903,6 +6249,133 @@
 			(project "STM32_Robotics_Controller"
 				(path "/bd8f9721-9971-4d95-8db0-a2bf81b5aae1/02cf191f-a581-4b5f-bbf8-08a806bb0c1e"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Driver_Motor:DRV8848")
+		(at 58.42 154.94 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "78693ca1-b117-4561-9730-8c9a8e5d9b8f")
+		(property "Reference" "U4"
+			(at 60.5633 137.16 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DRV8848"
+			(at 60.5633 139.7 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:TSSOP-16-1EP_4.4x5mm_P0.65mm"
+			(at 58.42 172.72 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/drv8848.pdf"
+			(at 29.21 120.65 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Dual H-Bridge motor driver, PWM controlled, single/dual brushed DC stepper, +2 to +18 VDD, TSSOP-16"
+			(at 58.42 154.94 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "4"
+			(uuid "d66be80a-4e86-4d10-8326-458b86eb61a0")
+		)
+		(pin "5"
+			(uuid "bc12bdca-400c-4f64-95fe-bf7490c9bc5b")
+		)
+		(pin "16"
+			(uuid "6cca8763-8c60-4331-a119-5165037e5169")
+		)
+		(pin "17"
+			(uuid "875dcd32-7ed1-44f2-8745-e625a4edb47a")
+		)
+		(pin "1"
+			(uuid "a2a1ec51-53a9-44dd-819b-49201af6f06e")
+		)
+		(pin "6"
+			(uuid "7eae71b9-c5b9-4b84-8534-efd64d0d53ac")
+		)
+		(pin "12"
+			(uuid "78799821-465f-4bd6-8eee-751ef32f0bfd")
+		)
+		(pin "14"
+			(uuid "72e85498-5267-42e5-a727-fb2d42355d0d")
+		)
+		(pin "9"
+			(uuid "15b842e2-1d62-4225-96b7-2b41b2bb88e5")
+		)
+		(pin "2"
+			(uuid "08ba5f95-23e9-47c3-b0d1-666505655eeb")
+		)
+		(pin "3"
+			(uuid "23adcf7f-699a-4dd8-81f3-26fd1deffd71")
+		)
+		(pin "8"
+			(uuid "5e832b78-453b-45a9-b38e-d275de0aefed")
+		)
+		(pin "11"
+			(uuid "70429b5d-17fa-4169-b169-f1b54c728311")
+		)
+		(pin "7"
+			(uuid "b3a2ac0d-ad00-4749-9994-9e1696ceeb22")
+		)
+		(pin "13"
+			(uuid "c867a220-3451-4d48-9faa-defe3155ff08")
+		)
+		(pin "15"
+			(uuid "d185ae9d-98a8-4c58-9f1f-dd62b5cccda6")
+		)
+		(pin "10"
+			(uuid "54ce67bc-e7b8-4dae-ba10-129311ea6683")
+		)
+		(instances
+			(project "STM32_Robotics_Controller"
+				(path "/bd8f9721-9971-4d95-8db0-a2bf81b5aae1/02cf191f-a581-4b5f-bbf8-08a806bb0c1e"
+					(reference "U4")
 					(unit 1)
 				)
 			)

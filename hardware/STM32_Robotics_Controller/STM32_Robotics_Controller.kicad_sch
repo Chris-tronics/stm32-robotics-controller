@@ -2590,7 +2590,7 @@
 		)
 		(uuid "26cad3a3-1bac-4a91-a914-496a86a4498b")
 	)
-	(label "VIN_12_24V"
+	(label "VIN_12_18V"
 		(at 26.67 71.12 0)
 		(effects
 			(font
