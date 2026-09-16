@@ -73,6 +73,7 @@ The project is currently in the schematic design stage.
 
 Completed or allocated sections include:
 
+- Power Regulation and reverse polarity protection
 - STM32 core circuitry
 - Clock, reset, and BOOT0
 - SWD debugging interface
