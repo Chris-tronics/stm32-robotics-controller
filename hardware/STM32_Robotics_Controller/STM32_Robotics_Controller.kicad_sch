@@ -2580,35 +2580,69 @@
 		)
 		(uuid "fcf09750-fe61-449b-9b82-d14bb19d622e")
 	)
-	(label "VIN_PROTECTED"
-		(at 80.01 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "26cad3a3-1bac-4a91-a914-496a86a4498b")
-	)
 	(label "VIN_12_18V"
 		(at 26.67 71.12 0)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
 			(justify left bottom)
 		)
 		(uuid "79c7aac4-0867-4a29-9ef2-526481e3fb46")
 	)
-	(label "VIN_PROTECTED"
-		(at 100.33 64.77 0)
+	(global_label "VIN_PROTECTED"
+		(shape input)
+		(at 80.01 71.12 0)
+		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
 			)
-			(justify left bottom)
+			(justify left)
 		)
-		(uuid "e4a3e18c-e8f8-4196-8b4a-46efab7fa7af")
+		(uuid "0c12ca92-cc70-4fc7-b326-a5448920f251")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.1064 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+	)
+	(global_label "VIN_PROTECTED"
+		(shape input)
+		(at 100.33 64.77 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(thickness 0.254)
+				(bold yes)
+			)
+			(justify left)
+		)
+		(uuid "5d1972c0-3f25-409b-9f41-718a782339e3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 118.4264 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 	)
 	(symbol
 		(lib_id "Transistor_FET:Q_PMOS_GDS")
